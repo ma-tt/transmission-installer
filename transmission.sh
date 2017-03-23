@@ -36,13 +36,13 @@ echo "I need to ask you a few questions before starting the setup"
 echo "You can leave the default options and just press enter if you are ok with them"
 echo ""
 
-DOWNLOAD_COMPLETED="/var/downloads/completed"
-DOWNLOAD_INCOMPLETE="/var/downloads/incomplete"
+DOWNLOAD_COMPLETED="/home/downloads"
+DOWNLOAD_INCOMPLETE="/home/downloads"
 
-echo "First I need to know the completed download location of Transmission"
+echo "Where should Transmission put completed downloads"
 read -p "Completed Download Location: " -e -r -i $DOWNLOAD_COMPLETED DOWNLOAD_COMPLETED
 echo ""
-echo "What is the incomplete download location of Transmission"
+echo "Where should Transmission put incomplete downloads"
 read -p "Incomplete Download Location: " -e -r -i $DOWNLOAD_INCOMPLETE DOWNLOAD_INCOMPLETE
 echo ""
 
@@ -66,7 +66,7 @@ done
 PASSWORD=$password2
 
 echo ""
-echo "Okay, that was all I needed. We are ready to setup your Transmission Bittorent Client now"
+echo "We are ready to setup your Transmission Bittorent Client now"
 read -n1 -r -p "Press any key to continue..."
 
 apt-get update
