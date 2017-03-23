@@ -8,4 +8,3 @@ Transmission installer script (for Debian/Ubuntu).
 ```
 wget --no-check-certificate https://github.com/bariscimen/transmission-installer/raw/master/transmission.sh && sudo bash transmission.sh
 ```
-contact: [http://bariscimen.com](http://bariscimen.com)
